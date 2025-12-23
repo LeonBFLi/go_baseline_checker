@@ -1,0 +1,10 @@
+systemd:
+  units:
+    - name: ssh.service
+      enabled: true
+      active: true
+
+sshd:
+  config:
+    PermitRootLogin: "no"
+    PasswordAuthentication: "no"
